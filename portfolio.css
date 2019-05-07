@@ -9,16 +9,16 @@
     background-attachment: fixed;
 } 
 
-.me{
-  background-image: ("../portfolio/assets/stickwithme.jpg");
+.me body{
+  background-image: url("./assets/stickwithme.jpg");
   background-size: cover;
   background-position: absolute;
   background-repeat: no repeat;
   background-attachment: fixed;
 }
 
-.projects{
-  background-image: url("../portfolio/assets/Create.png");
+.projects body{
+  background-image: url("./assets/Create.png");
   background-size: cover;
   background-position: absolute;
   background-repeat: no repeat;
@@ -41,28 +41,77 @@
   background-attachment: fixed;
 }
 
-h1{
+
+.name {
     font-family: 'Arvo', serif;
     color: whitesmoke;
-    size: 92px;
+    font-size: 92px;
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
-        1px 1px 0 #000;    
+        1px 1px 0 #000;  
+    margin-bottom: 0;
+    padding-bottom: 0;  
 }
 
-h3{
+.aboutme {
+  font-family: 'Arvo', serif;
+  color: whitesmoke;
+  font-size: 22px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+      1px 1px 0 #000;  
+  margin-bottom: 0;
+  padding-bottom: 0;  
+}
+
+.title {
+  font-family: 'Arvo', serif;
+  color: whitesmoke;
+  font-size: 30px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+      1px 1px 0 #000;  
+  margin-bottom: 0;
+  padding-bottom: 0;  
+}
+
+.col-md-4 {
+  background-color: #808080;
+  width: 300px;
+  margin: auto;
+}
+
+.web{
     font-family: 'Permanent Marker', cursive;
-    size: 31px;
+    font-size: 61px;
     color: whitesmoke;
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
-        1px 1px 0 #000;    
+        1px 1px 0 #000; 
+    margin-top: 0;   
 }
 
+.trouble {
+  background-color: #43506F;
+  font-family: 'Arvo', serif;
+  color: whitesmoke;
+  font-size: 22px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+      1px 1px 0 #000;  
+  margin-bottom: 0;
+  padding-bottom: 0;  
+}
 
 ul {
     font-family: 'Anton', sans-serif;
@@ -83,8 +132,10 @@ ul {
     background: linear-gradient(to bottom, #3f4c6b 0%,#606c88 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#606c88',GradientType=0 ); 
   }
+
+
   
-  li {
+  li { 
     float: right;
   }
   
@@ -107,6 +158,8 @@ ul {
     background: gray;
     border: 1px solid #CCC;
     border-radius: 1em;
+    margin-top: 130px;
+    margin-bottom: 130px;
   }
   
   form div + div {
@@ -142,6 +195,11 @@ ul {
   button {
     margin-left: .5em;
   }
+
+ 
+
+
+  
 
   .footer{
     display: relative;

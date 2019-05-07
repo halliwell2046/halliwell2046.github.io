@@ -3,6 +3,7 @@
 <head>
         <link href="https://fonts.googleapis.com/css?family=Arvo:700|Permanent+Marker" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,21 +17,18 @@
                 <li><a href="index.me.html">About Me</a></li>
                 <li><a href="index.html">Home</a></li>
               </ul>
-              <form class="form" action="/my-handling-form-page" method="post">
+              <form method="POST" class="form" action="https://formspree.io/halliwell2046@yahoo.com">
                 <div>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name">
+                   <input type="name" name="name" placeholder="Name">
                 </div>
                 <div>
-                  <label for="mail">E-mail:</label>
-                  <input type="email" id="mail" name="user_mail">
+                <input type="email" name="email" placeholder="Your email">
                 </div>
                 <div>
-                  <label for="msg">Message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
+                <textarea name="message" placeholder="Your Message"></textarea>
                 </div>
-                <div class="button">
-                    <button type="button">Submit</button>
+                <div>
+                <button type="submit" class="button">Submit</button>
                 </div>
               </form>
                   </div>
