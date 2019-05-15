@@ -96,6 +96,15 @@
   padding-bottom: 15px;
 }
 
+.col-md-4-home {
+  width: 300px;
+  margin: auto;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 0px;
+  display: inline-block;
+}
+
 .web{
     font-family: 'Permanent Marker', cursive;
     font-size: 61px;
