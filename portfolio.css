@@ -9,14 +9,6 @@
     background-attachment: fixed;
 } 
 
-.me body{
-  background-image: url("./assets/stickwithme.jpg");
-  background-size: cover;
-  background-position: absolute;
-  background-repeat: no repeat;
-  background-attachment: fixed;
-}
-
 .projects body{
   background-image: url("./assets/Create.png");
   background-size: cover;
@@ -25,15 +17,13 @@
   background-attachment: fixed;
 }
 
-.contact{
-  background-image: url("https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  background-size: cover;
-  background-position: absolute;
-  background-repeat: no repeat;
-  background-attachment: fixed;
+.icon {
+  text-align: center;
 }
 
-.resume{
+
+
+.resume body{
   background-image: url("https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80");
   background-size: cover;
   background-position: absolute;
@@ -41,6 +31,15 @@
   background-attachment: fixed;
 }
 
+.container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+
+.form {
+  border-right: 100px;
+}
 
 .name {
     font-family: 'Arvo', serif;
@@ -85,6 +84,7 @@
   background-color: #808080;
   width: 300px;
   margin: auto;
+  padding-bottom: 15px;
 }
 
 .web{
@@ -99,7 +99,7 @@
     margin-top: 0;   
 }
 
-.trouble {
+#trouble {
   background-color: #43506F;
   font-family: 'Arvo', serif;
   color: whitesmoke;
@@ -133,6 +133,29 @@ ul {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#606c88',GradientType=0 ); 
   }
 
+  .quote{
+    float: left;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+    overflow: hidden;
+    border-right: 15em;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 41% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
   
   li { 
@@ -196,10 +219,18 @@ ul {
     margin-left: .5em;
   }
 
- 
+  .mypic {
+    padding-right: 200px;
+  }
 
-
+  .aboutmepic {
+    padding-bottom: 100px;
+  }
   
+  .resumeiframe {
+    padding-left: 10px;
+  }
+
 
   .footer{
     display: relative;
@@ -215,7 +246,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: #3f4c6b; 
+    background: #808080; 
     background: -moz-linear-gradient(top, #3f4c6b 0%, #606c88 100%); 
     background: -webkit-linear-gradient(top, #3f4c6b 0%,#606c88 100%); 
     background: linear-gradient(to bottom, #3f4c6b 0%,#606c88 100%); 

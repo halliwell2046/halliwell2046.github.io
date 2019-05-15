@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" class="resume">
-<head>
-        <link href="https://fonts.googleapis.com/css?family=Arvo:700|Permanent+Marker" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="portfolio.css">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
-</head>
-<body>
-        <ul>
-                <li><a href="index.contact.html">Contact Me</a></li>
-                <li><a href="index.resume.html">My Resume</a></li>
-                <li><a href="index.projects.html">My Projects</a></li>
-                <li><a href="index.me.html">About Me</a></li>
-                <li><a href="index.html">Home</a></li>
-              </ul>
-              <br>
-              <div class="resume">
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vRyIX5BWeX_uiG4hSdzdcc3Rme-OcLaKp8lipEr50VdASGRIv7JLe8xC8zrRqZNt2hRcR2V1qoVJngB/pub?embedded=true" width="750" height="550"></iframe>
 
-                <p class="trouble"> If you are having trouble viewing please <a href="https://docs.google.com/document/d/1E44YN5nIMDYhdpLUXow8UDm-dbvh30n9T_XnY1Bbrf4/edit?usp=sharing" target="_blank">click here</a></a></p>
-              </div>
-              <br>
-              <footer class="footer">
-                    Alice Frazier<br>
-                    halliwell2046@yahoo.com<br>
-                    (317)313-7712
-                </footer>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Arvo:700|Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+</head>
+ 
+<body>
+  <ul>
+    <li class="quote">She believed she could so she did. -R.S. Grey</li>
+    <li><a href="index.resume.html">My Resume</a></li>
+    <li><a href="index.projects.html">My Projects</a></li>
+    <li><a href="index.html">About Me</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+  <br>
+  <div class="row">
+      <div class="col-md-6">
+  
+    <iframe class="resumeiframe"
+      src="https://docs.google.com/document/d/e/2PACX-1vRyIX5BWeX_uiG4hSdzdcc3Rme-OcLaKp8lipEr50VdASGRIv7JLe8xC8zrRqZNt2hRcR2V1qoVJngB/pub?embedded=true"
+      width="750" height="550"></iframe>
+      </div>
+      <div class="col-md-6">
+          <form method="POST" class="form" action="https://formspree.io/halliwell2046@yahoo.com">
+            <div>
+              <p class="aboutme">Contact Me</p>
+            </div>
+            <div>
+              <input type="name" name="name" placeholder="Name">
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Your email">
+            </div>
+            <div>
+              <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="button">Submit</button>
+            </div>
+          </form>
+      </div>
+    </div>
+        <div>  <p id="trouble"> If you are having trouble viewing please <a
+        href="https://docs.google.com/document/d/1E44YN5nIMDYhdpLUXow8UDm-dbvh30n9T_XnY1Bbrf4/edit?usp=sharing"
+        target="_blank">click here</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+  <div class="icon">
+      <a href="https://github.com/halliwell2046" target="_blank"> <i class="fa fa-github-square" style="font-size:48px"> </i></a>
+      
+      <a href="https://www.linkedin.com/in/alice-frazier-17797325/" target="_blank"> <i class="fa fa-linkedin-square" style="font-size:48px"> </i> </a>
+  </div>
+</div>
+  <footer class="footer">
+    Alice Frazier<br>
+    halliwell2046@yahoo.com<br>
+    (317)313-7712
+  </footer>
+  </div>
 </body>
-</html> 
+
+</html>
