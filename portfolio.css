@@ -36,6 +36,15 @@
   padding-bottom: 200px;
 }
 
+.email {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.phone {
+  color: whitesmoke;
+  text-decoration: none;
+}
 
 .form {
   border-right: 100px;
