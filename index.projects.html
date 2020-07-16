@@ -2,62 +2,90 @@
 <html lang="en" class="projects">
 
 <head>
-   <link href="https://fonts.googleapis.com/css?family=Arvo:700|Permanent+Marker" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="portfolio.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Projects</title>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+       <link href="https://fonts.googleapis.com/css?family=Arvo:700|Permanent+Marker" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="portfolio.css">
+       <link rel="icon" type="image/png" sizes="16x16" href="./assets/alice-favicon.png">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+       <title>Alice Frazier | Projects</title>
 </head>
 
 <body>
-   <ul>
-      <li class="quote">She believed she could so she did. -R.S. Grey</li>
-      <li><a href="index.resume.html">Contact Me</a></li>
-      <li><a href="index.resume.html">My Resume</a></li>
-      <li><a href="index.projects.html">My Projects</a></li>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="index.html">Home</a></li>
-   </ul>
-   <div class="container">
-      <div class="row">
-         <div class="col-md-4">
+   <nav class="navbar">
+      <div>
+          <p class="d-none d-lg-block nav-quote">"She believed she could so she did." -R.S. Grey</p>
+      </div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#aboutmelink">About Me</a></li>
+          <li><a href="index.projects.html">Projects</a></li>
+          <li><a href="index.resume.html">Resume</a></li>
+      </ul>
+  </nav>
+
+   <div class="container-proj-links">
+      <div>
             <p class="title">CSS Creature Project</p>
-            <a class="csspic" href="https://codepen.io/halliwell2046/full/OGWdBj" target="_blank"><img
+            <hr>
+            <a href="https://codepen.io/halliwell2046/full/OGWdBj" target="_blank"><img
                   src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
-                  height="200" width="200"></a>
+                  height="300" width="300"></a>
          </div>
-         <div class="col-md-4">
+         <div>
             <p class="title">Tutorial Webpage</p>
-            <a class="webpic"
-               href="https://halliwell2046.github.io/TutorialPageApril2019/"
-               target="_blank"><img
+            <hr>
+            <a href="https://halliwell2046.github.io/TutorialPageApril2019/" target="_blank"><img
                   src="https://images.unsplash.com/photo-1517607537732-619ace47ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                  height="200" width="200"></a>
+                  height="300" width="300"></a>
          </div>
-         <div class="col-md-4">
+         <div>
             <p class="title">API Project</p>
-            <a class="apipic" href="https://apf-api-project.firebaseapp.com/" target="_blank"><img
+            <hr>
+            <a href="https://apf-api-project.firebaseapp.com/" target="_blank"><img
                   src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                  height="200" width="200"></a>
+                  height="300" width="300"></a>
          </div>
       </div>
          <br>
-      </div>
+         <div class="container-proj-links" id="container" style="margin-left: 35rem;">
+            <div>
+            <p class="title">Websites</p>
+            <hr>
+             <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=693&q=80"
+                                  height="300" width="300"></a>
+              <div class="overlay" style="margin-left: 18.7rem;">
+                <div><a class="text" href="http://wehmeierlaw.com/?fbclid=IwAR0px_ICWIV6pqx6bI8ibfn1muL2iFUlnqZ1LIPSQ1E747C1-QAepSBI_m4">Wehmeier Law</a></div>
+                <div><a class="text" href="http://mondaylovepodcast.com/">Monday Love Podcast</a></div>
+              </div>
+            </div>
+            </div>
    <div class="icon">
          <a href="https://github.com/halliwell2046" target="_blank"> <i class="fa fa-github-square" style="font-size:48px"> </i></a>
          
          <a href="https://www.linkedin.com/in/alice-frazier-17797325/" target="_blank"> <i class="fa fa-linkedin-square" style="font-size:48px"> </i> </a>
  </div>
-   <footer class="footer">
-      Alice Frazier<br>
-      <a href="mailto:halliwell2046@yahoo.com" class="email">halliwell2046@yahoo.com</a><br>
-      <a href="tel+3173137712" class="phone">(317)313-7712</a>
-   </footer>
+ <footer class="footer">
+   <div class="container-fluid padding">
+   <div class="row text-center">
+       <div class="col-md-4">
+           <p>Alice Frazier</p>
+       </div> 
+       <div class="col-md-4">   
+           <a href="mailto:halliwell2046@yahoo.com" class="email">halliwell2046@yahoo.com</a>
+       </div>
+       <div class="col-md-4">
+           <a href="tel+3173137712" class="phone">(317)313-7712</a>
+       </div>
+   </div>
+   </div>
+</footer>
 </body>
 
 </html>
