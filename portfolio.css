@@ -1,12 +1,84 @@
-*{
-    text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-.index{
-    background-image: url("https://images.unsplash.com/photo-1496674205429-924b32acd421?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-    background-size: cover;
-    background-position: absolute;
-    background-repeat: no repeat;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start design*/
+
+* {
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body::after{
+    background: url("https://images.unsplash.com/photo-1496674205429-924b32acd421?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: auto;
+    background-size: 100% 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1; 
 } 
 
 .projects body{
@@ -19,9 +91,47 @@
 
 .icon {
   text-align: center;
+  padding-bottom: .5rem;
 }
 
 
+.fa-github-square {
+  color: #E94F32;
+}
+
+.fa-github-square:hover {
+  color: #E94F32;
+  opacity: .6;
+}
+
+.fa-linkedin-square {
+  color:#0C61C0;
+}
+
+.fa-linkedin-square:hover {
+  color:#0C61C0;
+  opacity: .6;
+}
+
+.links {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.links:hover {
+  text-decoration: none;
+}
+
+.sylvan, .Lego, .Tynker, .title {
+  padding-top: .5rem;
+  text-align: center;
+}
+
+.teach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 .resume body{
   background-image: url("https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80");
@@ -29,11 +139,6 @@
   background-position: absolute;
   background-repeat: no repeat;
   background-attachment: fixed;
-}
-
-.container {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .email {
@@ -61,9 +166,11 @@
         1px 1px 0 #000;  
     margin-bottom: 0;
     padding-bottom: 0;  
+    padding-top: 1rem;
 }
 
 .aboutme {
+  font-size: 1rem;
   font-family: 'Arvo', serif;
   color: whitesmoke;
   font-size: 22px;
@@ -74,6 +181,10 @@
       1px 1px 0 #000;  
   margin-bottom: 0;
   padding-bottom: 0;  
+}
+
+hr {
+  outline: solid 1px black;
 }
 
 .title {
@@ -89,14 +200,7 @@
   padding-bottom: 0;  
 }
 
-.col-md-4 {
-  background-color: #808080;
-  width: 300px;
-  margin: auto;
-  padding-bottom: 15px;
-}
-
-.col-md-4-home {
+.home {
   width: 300px;
   margin: auto;
   padding-bottom: 15px;
@@ -115,6 +219,7 @@
 		-1px 1px 0 #000,
         1px 1px 0 #000; 
     margin-top: 0;   
+    padding-bottom: 1rem;
 }
 
 #trouble {
@@ -131,65 +236,74 @@
   padding-bottom: 0;  
 }
 
+.navbar  {
+  font-family: 'Anton', sans-serif;
+  color: whitesmoke;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(63,76,107);
+  background: linear-gradient(0deg, rgba(63,76,107,1) 0%, rgba(96,108,136,1) 100%);
+}
+
 ul {
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    color: whitesmoke;
-    text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #3f4c6b; 
-    background: -moz-linear-gradient(top, #3f4c6b 0%, #606c88 100%); 
-    background: -webkit-linear-gradient(top, #3f4c6b 0%,#606c88 100%); 
-    background: linear-gradient(to bottom, #3f4c6b 0%,#606c88 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#606c88',GradientType=0 ); 
-  }
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  justify-content: space-between;
+}
 
-  .quote{
-    float: left;
-    padding-top: 15px;
-    padding-left: 5px;
-    font-size: 20px;
-    overflow: hidden;
-    border-right: 15em;
-    white-space: nowrap;
-    letter-spacing: .15em;
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 41% }
-  }
+li a:hover {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+}
 
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+.nav-quote {
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+  color: whitesmoke;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  /* text-align: center; */
+  /* display: inline-block; */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
 
-  
-  li { 
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+  .aboutmeimage img{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   form {
@@ -236,14 +350,6 @@ ul {
   button {
     margin-left: .5em;
   }
-
-  .mypic {
-    padding-right: 200px;
-  }
-
-  .aboutmepic {
-    padding-bottom: 100px;
-  }
   
   .resumeiframe {
     padding-left: 10px;
@@ -251,6 +357,7 @@ ul {
 
 
   .footer{
+    font-size: 2rem;
     display: relative;
     font-family: 'Anton', sans-serif;
     text-align: center;
@@ -262,7 +369,8 @@ ul {
 		1px 1px 0 #000;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: .5rem;
     overflow: hidden;
     background: #808080; 
     background: -moz-linear-gradient(top, #3f4c6b 0%, #606c88 100%); 
@@ -270,3 +378,31 @@ ul {
     background: linear-gradient(to bottom, #3f4c6b 0%,#606c88 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#606c88',GradientType=0 ); 
   }
+
+   /*---Media Queries --*/
+@media (max-width: 992px) {
+  
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+  
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

@@ -2,6 +2,10 @@
 <html lang="en" class="index">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
     <link href="https://fonts.googleapis.com/css?family=Arvo:700|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
@@ -14,59 +18,76 @@
 </head>
 
 <body>
-    <ul>
-        <li class="quote">She believed she could so she did. -R.S. Grey</li>
-        <li><a href="index.resume.html">Contact Me</a></li>
-        <li><a href="index.resume.html">My Resume</a></li>
-        <li><a href="index.projects.html">My Projects</a></li>
-        <li><a href="#aboutmelink">About Me</a></li>
-        <li><a href="index.html">Home</a></li>
-    </ul>
+    <nav class="navbar">
+        <div>
+            <p class="d-none d-lg-block nav-quote">"She believed she could so she did." -R.S. Grey</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#aboutmelink">About Me</a></li>
+            <li><a href="index.projects.html">Projects</a></li>
+            <li><a href="index.resume.html">Resume</a></li>
+        </ul>
+</nav>
+
+    <div class="container-fluid">
     <p class="name">Alice Frazier</p>
     <p class="web">Web Design</p>
-    <img class="mypic" src="./assets/Alice.jpg" width="375" height="600">
-    <img class="aboutmepic" src="./assets/alice2.jpg" width="350" height="350">
-    <br>
+    </div>
+    <div class="aboutmeimage">
+        <img src="assets/newaboutmeimage.jpg">
+    </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
     <p class="web" id="aboutmelink"> About Me</p>
-    <p class="aboutme">Currently living and working in Indianapolis, IN. I currently work for Dominion Dealer Solutions
+    <p class="aboutme">Currently living in Indianapolis, IN. I previously worked for <a class="links" href="https://www.drivedominion.com/" target="_blank"> Dominion Dealer Solutions </a>
         and started there as website tech support, which I loved doing, unfortunately our website team was dissolved and
-        we no longer host websites so now I support our CRM.</p>
+        we no longer hosted websites so my next step was to support our CRM.</p>
+        <br>
+        <p class="aboutme">I am currently an IT Field Tech for <a class="links" href="https://www.thetangramway.org/" target="_blank">Tangram</a>.  I attended <a class="links" href="https://elevenfifty.org/?gclid=Cj0KCQjw9b_4BRCMARIsADMUIypVggHYB_Bmd_dmRbOhPsQOUgOOhAlhB43QhTpEMHKxiqMu_t-tUV4aAg0CEALw_wcB" target="_blank">Eleven Fifty Academy</a> in 2019 for Javascript, I am currently enrolled at <a class="links" href="https://lambdaschool.com/go?utm_source=paid&utm_medium=google&utm_campaign=&campaignid=1147145732&utm_content=coding+bootcamps&adgroupid=53144480055&utm_term=lambda%20schools&matchtype=e&device=c&placement=&network=g&creative=405208886807&src=adwords&ad=coding+bootcamps&gclid=Cj0KCQjw9b_4BRCMARIsADMUIyr8mbgP7NoPlr8xL78wPNGLBlw9TFrUZMLhzMw9Vg_8Lw0AVOW8pUcaAqr3EALw_wcB" target="_blank">Lambda Schools</a> working on Full Stack Web Development and taking a <a class="links" href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.US&utm_term=_._ag_78616515599_._ad_389436697904_._de_c_._dm__._pl__._ti_kwd-310556426868_._li_9016151_._pd__._&utm_term=_._pd__._kw_udemy_._&matchtype=e&gclid=Cj0KCQjw9b_4BRCMARIsADMUIyosw_hYt2fJ5MwqBNmB9i1hhEL0dJEuKfnFwVifsjIhQoZEP5dpN80aAoetEALw_wcB" target="_blank">UDemy</a> course for A+ certification.</p>
+
+        <br>
         <p class="aboutme">For two years I was a teacher at Sylvan Learning Center where I taught the Lego Robotics class and the Tynker Coding class.  If you would like more information on these programs check them out at the links below.</p>
-       
-            <div class="row">
-               <div class="col-md-4-home">
-                  <p class="title">Sylvan Learning Center</p>
-                  <a class="sylvan" href="https://www.sylvanlearning.com/" target="_blank"><img
-                        src="./assets/sylvan_home_logo.png"
-                        height="200" width="200"></a>
-               </div>
-               <div class="col-md-4-home">
-                  <p class="title">Lego </p>
-                  <a class="Lego"
-                     href="https://www.sylvanlearning.com/stem/robotics-science"
-                     target="_blank"><img
-                        src="./assets/lego.jpg"
-                        height="200" width="200"></a>
-               </div>
-               <div class="col-md-4-home">
-                  <p class="title">Tynker</p>
-                  <a class="Tynker" href="https://www.tynker.com/?t=reset" target="_blank"><img
-                        src="./assets/tynker.png"
-                        height="200" width="300"></a>
-               </div>
+        </div>
+        <br>
+        <div class="teach">
+            <div>
+             <p class="title">Sylvan Learning Center</p>
+             <a class="sylvan" href="https://www.sylvanlearning.com/" target="_blank"><img          src="./assets/sylvan_home_logo.png" height="200" width="200"></a>
+            </div>
+            <div>
+              <p class="title">Lego </p>
+              <a class="Lego" href="https://www.sylvanlearning.com/stem/robotics-science"             target="_blank"><img src="./assets/lego.jpg" height="200" width="200"></a>
+            </div>
+            <div>
+             <p class="title">Tynker</p>
+             <a class="Tynker" href="https://www.tynker.com/?t=reset" target="_blank"><img
+               src="./assets/tynker.png" height="200" width="300"></a>
+            </div> 
+          </div>
            
     <br>
     <div class="icon">
-            <a href="https://github.com/halliwell2046" target="_blank"> <i class="fa fa-github-square" style="font-size:48px"> </i></a>
-            
-            <a href="https://www.linkedin.com/in/alice-frazier-17797325/" target="_blank"> <i class="fa fa-linkedin-square" style="font-size:48px"> </i> </a>
-            
+        <a href="https://github.com/halliwell2046" target="_blank"> <i class="fa fa-github-square" style="font-size:48px"> </i></a>
+        
+        <a href="https://www.linkedin.com/in/alice-frazier-17797325/" target="_blank"> <i class="fa fa-linkedin-square" style="font-size:48px"> </i> </a>
     </div>
 
     <footer class="footer">
-        Alice Frazier<br>
-        <a href="mailto:halliwell2046@yahoo.com" class="email">halliwell2046@yahoo.com</a><br>
-    <a href="tel+3173137712" class="phone">(317)313-7712</a>
+        <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <p>Alice Frazier</p>
+            </div> 
+            <div class="col-md-4">   
+                <a href="mailto:halliwell2046@yahoo.com" class="email">halliwell2046@yahoo.com</a>
+            </div>
+            <div class="col-md-4">
+                <a href="tel+3173137712" class="phone">(317)313-7712</a>
+            </div>
+        </div>
+        </div>
     </footer>
 
 </body>
