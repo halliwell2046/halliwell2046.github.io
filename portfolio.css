@@ -208,6 +208,67 @@ li a:hover {
   50% { border-color: black }
 }
 
+
+.fa-envelope-open-text {
+  font-size: 24px;
+  padding-top: 1.5rem;
+}
+
+.label-container{
+  position:fixed;
+  bottom:48px;
+  right:105px;
+  display:table;
+  visibility: hidden;
+}
+
+.label-text{
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  color:#FFF;
+  background:rgba(51,51,51,0.5);
+  display:table-cell;
+  vertical-align:middle;
+  padding:10px;
+  border-radius:3px;
+}
+
+.label-arrow{
+  display:table-cell;
+  vertical-align:middle;
+  color:#333;
+  opacity:0.5;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color: red;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #54607d;
+}
+
+.my-float{
+  font-size:24px;
+  margin-top:18px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
+
 .name {
   font-family: 'Arvo', serif;
   color: whitesmoke;
@@ -258,12 +319,66 @@ li a:hover {
 
 
 
-.form {
-  border-right: 100px;
+.resume-phone {
+  display: none;
 }
 
+.form {
+  text-align: center;
+  margin: 0 auto;
+  width: 398px;
+  height: 25rem;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  border-right: 100px;
+  color: whitesmoke;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  list-style-type: none;
+  overflow: hidden;
+  background: #808080; 
+  background: -moz-linear-gradient(top, #3f4c6b 0%, #606c88 100%); 
+  background: -webkit-linear-gradient(top, #3f4c6b 0%,#606c88 100%); 
+  background: linear-gradient(to bottom, #3f4c6b 0%,#606c88 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#606c88',GradientType=0 ); 
+}
 
+form div + div {
+  margin-top: 25px;
+}
 
+.form input {
+  font-size: 1.5rem;
+}
+
+.form textarea {
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border-radius: .5em;
+}
+
+.iframe {
+  display: flex;
+}
+
+.resumeiframe {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
 
 hr {
   outline: solid 1px black;
@@ -305,8 +420,9 @@ hr {
   1px -1px 0 #000,
   -1px 1px 0 #000,
       1px 1px 0 #000;  
-  margin-bottom: 0;
+  margin-bottom: 5rem;
   padding-bottom: 0;  
+  margin-top: 18rem;
 }
 
 
@@ -314,49 +430,6 @@ hr {
   .aboutmeimage img{
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    background: gray;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-    margin-top: 130px;
-    margin-bottom: 130px;
-  }
-  
-  form div + div {
-    margin-top: 25px;
-  }
-  
-  input, textarea {
-    font: 1em sans-serif;
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-  }
-  
-  input:focus, textarea:focus {
-    border-color: #000;
-  }
-  
-  textarea {
-    vertical-align: top;
-    height: 5em;
-  }
-  
-  .button {
-    text-align: center;
-  }
-  
-  button {
-    margin-left: .5em;
-  }
-  
-  .resumeiframe {
-    padding-left: 10px;
   }
 
 
