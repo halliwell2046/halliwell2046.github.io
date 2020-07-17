@@ -102,6 +102,7 @@ body::after{
 .icon {
   text-align: center;
   padding-bottom: .5rem;
+  margin-top: 5rem;
 }
 
 
@@ -331,9 +332,9 @@ a.float:hover + div.label-container{
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
-  margin-top: 130px;
+  margin-top: 25rem;
   margin-bottom: 130px;
-  margin-left: .5rem;
+  margin-left: 15rem;
   margin-right: .5rem;
   border-right: 100px;
   color: whitesmoke;
@@ -370,14 +371,14 @@ button {
   border-radius: .5em;
 }
 
-.iframe {
+/* .iframe {
   display: flex;
-}
+  width: 1000px;
+} */
 
 .resumeiframe {
   display: flex;
-  flex-direction: row;
-  padding-left: 10px;
+  padding-left: 2rem;
 }
 
 hr {
@@ -422,7 +423,7 @@ hr {
       1px 1px 0 #000;  
   margin-bottom: 5rem;
   padding-bottom: 0;  
-  margin-top: 18rem;
+  margin-top: 6rem;
 }
 
 
@@ -446,6 +447,7 @@ hr {
 		1px 1px 0 #000;
     list-style-type: none;
     margin: 0;
+    margin-top: 5rem;
     padding-top: 10px;
     padding-bottom: .5rem;
     overflow: hidden;
@@ -459,6 +461,7 @@ hr {
   #container {
     position: relative;
     width: 50%;
+    margin-left: 49rem;
   }
   
   .image {
@@ -469,7 +472,7 @@ hr {
   
   .overlay {
     margin-top: 5.5rem;
-    margin-left: 5rem;
+    margin-left: 32.6rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -495,30 +498,177 @@ hr {
     transform: translate(-50%, -50%);
   }
 
+  .formphone {
+    display: none;
+  }
+
    /*---Media Queries --*/
-@media (max-width: 992px) {
-  
-}
-@media (max-width: 768px) {
+   @media (max-width: 1370px) {
+    #container {
+      margin-left: 35rem;
+    }
 
-}
-@media (max-width: 576px) {
-  
-}
+     .overlay {
+       margin-left: 18.65rem;
+     }
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+     .iframe {
+       width: 1600px;
+       margin-left: 1rem;
+     }
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+     .form {
+       width: 50rem;
+       margin-right: 5rem;
+     }
+   }
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+   @media (max-width: 1030px) {
+    .nav-quote {
+      display: none;
+    }
 
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+    .hr {
+      display: none;
+    }
 
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+    .container-proj-links {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+    }
+   }
+
+   @media (max-width: 770px){
+     .navbar ul {
+       font-size: 1.5rem;
+       margin-right: 25rem;
+     }
+
+     .nav-quote {
+       display: none;
+     }
+
+     hr {
+       display: none;
+     }
+
+     .container-proj-links {
+       display: flex;
+       flex-direction: column;
+       margin-right: 22rem;
+     }
+
+     #container {
+       margin-left: 9rem;
+     }
+
+     .overlay {
+       margin-left: 4.7rem;
+       padding-top: 4rem;
+       margin-bottom: 1rem;
+     }
+
+     .icon {
+       margin-right: 7rem;
+       margin-top: 13rem;
+     }
+     
+     .resumeiframe {
+       display: none;
+     }
+
+     .resume-phone {
+       display: flex;
+       padding-left: 20rem;
+       background-color: #43506F;
+       font-family: 'Arvo', serif;
+      color: whitesmoke;
+      font-size: 22px;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;  
+     margin-bottom: 5rem;
+     padding-bottom: 0;  
+    margin-top: 2rem;
+     }
+
+     #trouble {
+       display: none;
+     }
+
+     .formphone {
+       display: flex;
+       height: 100%;
+       width: 100%;
+     }
+   }
+
+   @media (max-width: 415px) {
+     .navbar li {
+       font-size: 1rem;
+       text-align: center;
+       margin-left: 2rem;
+     }
+
+     .name {
+       font-size: 4rem;
+     }
+
+     .web {
+       font-size: 3rem;
+     }
+
+     .teach {
+       display: none;
+     }
+
+     .icon {
+       margin-left: .5rem;
+     }
+
+     .container-proj-links img {
+       display: none;
+     }
+
+     .title {
+       display: flex;
+       justify-content: space-around;
+       margin-left: 10rem;
+       padding-bottom: 1.5rem;
+     }
+
+     #container {
+       margin-left: .5rem;
+     }
+
+     .footer {
+       margin-top: 12rem;
+       }
+
+       .float {
+         position: fixed;
+         margin-right: 5rem;
+       }
+
+       .resume-phone {
+         font-size: 1.5rem;
+         text-align: center;
+        padding-left: 4rem;
+       }
+
+       .formphone {
+        display: flex;
+        margin: 0;
+       }
+     }
+
+   
+
+   @media (max-width: 380px)
+
+   @media (max-width: 365px)
+
+   @media (max-width: 325px)
