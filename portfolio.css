@@ -83,7 +83,7 @@ body::after{
     right: 0;
     left: 0;
     z-index: -1; 
-} 
+}
 
 .aboutme {
   font-size: 2rem;
@@ -98,6 +98,9 @@ body::after{
   padding-bottom: 0;  
 }
 
+.testdome {
+  margin-left: 87rem;
+}
 
 .icon {
   text-align: center;
